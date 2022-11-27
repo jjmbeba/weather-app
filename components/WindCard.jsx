@@ -8,7 +8,7 @@ const WindCard = () => {
   const speed = results.wind.speed.toString().split(".")[0];
   const arrow = document.getElementById("arrow")
   
-  if(arrow){
+  if(arrow && results){
     arrow.style.rotate = results.wind.deg
   }
 

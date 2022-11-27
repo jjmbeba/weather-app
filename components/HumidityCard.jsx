@@ -6,7 +6,7 @@ const HumidityCard = () => {
   const results = useSelector((state) => state.results);
   const humidString = results.main.humidity.toString();
   const bar = document.getElementById("bar");
-  if(bar){
+  if(bar && humidString){
     bar.style.width = humidString+"%"
   }
 
