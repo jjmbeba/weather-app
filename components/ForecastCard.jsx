@@ -14,7 +14,7 @@ const ForecastCard = ({max, min, index, date, main, desc}) => {
   }
 
   return (
-    <div className='flex flex-col items-center justify-center py-[18px] px-[22px] w-[160px] text-[15px] leading-[19px] font-[500]'>
+    <div className='flex flex-col items-center justify-center py-[18px] px-[22px] w-[140px] text-[15px] leading-[19px] font-[500]'>
         <h3 className='text-[#E7E7EB]'>{index === 0 ? "Tomorrow" : date}</h3>
         <Image className='pt-[10px]' src={icon(main, desc)} width={56} height={62} alt="forecast-image"/>
         <div className='flex items-center justify-center gap-[16px] pt-[31px]'>
