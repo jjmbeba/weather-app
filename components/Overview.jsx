@@ -18,7 +18,7 @@ const Overview = ({temp, weather}) => {
 
   return (
     // bg-cloud-pattern
-    <div className='w-full flex items-center justify-center pt-[76px] md:pt-[5vw] flex-col md:pb-[52px] pb-[105px] bg-center'>
+    <div className='w-full bg-cloud-pattern bg-transparent flex items-center justify-center pt-[76px] md:pt-[5vw] flex-col md:pb-[52px] pb-[105px] bg-center'>
         <Image className='image-contain' src={icon(results.weather[0].main, results.weather[0].description)} width={150} height={174} alt="weather-icon"/>
         <div className='pt-[40px] md:pt-[2vw] font-[500]'>
             <span className='text-[144px] md:text-[10vw] leading-[169px] md:leading-[11vw] text-[#E7E7EB]'>{selectedUnit === "°C" ? tempNow[0] : covertTemp(tempNow[0]).toString().split(".")[0]}</span>

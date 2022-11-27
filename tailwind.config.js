@@ -13,7 +13,7 @@ module.exports = {
         'my-location':'0px 4px 4px rgba(0, 0, 0, 0.25)'
       },
       backgroundImage:{
-        'cloud-pattern':'url("/Cloud-background.png")'
+        'cloud-pattern':'url("/clouds-bg.png")'
       }
     },
   },
