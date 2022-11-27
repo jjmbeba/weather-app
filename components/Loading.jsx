@@ -1,24 +1,17 @@
 import React from 'react'
-import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
+import {Spinner} from '@chakra-ui/react'
 
-const LoaderExampleTextShorthand = () => (
-  <div>
-    <Segment>
-      <Dimmer active>
-        <Loader content='Loading' />
-      </Dimmer>
-
-      <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-    </Segment>
-
-    <Segment>
-      <Dimmer active inverted>
-        <Loader inverted content='Loading' />
-      </Dimmer>
-
-      <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
-    </Segment>
+const Loading = () => (
+  <div className='w-screen h-screen flex flex-col items-center justify-center'>
+    <Spinner
+      thickness='4px'
+      speed='0.65s'
+      emptyColor='gray.200'
+      color='blue.500'
+      size='xl'
+    />
+    <span className='text-white pt-[15px] text-[18px] font-semibold'>Loading</span>
   </div>
 )
 
-export default LoaderExampleTextShorthand
+export default Loading
