@@ -9,7 +9,7 @@ const Forecast = () => {
   const nextDate = new Date();
 
   return (
-    <div className='bg-[#100E1D] py-[52px] px-[8vw] md:px-[6vw] grid grid-cols-2 md:flex items-center gap-[2vw] gap-x-[26px] gap-y-[32px]'>
+    <div className='bg-[#100E1D] py-[52px] px-[6vw] md:px-[6vw] grid grid-cols-2 md:flex items-center gap-[6vw] gap-x-[26px] gap-y-[32px]'>
         {
 
           forecast.map(({main},i) => {
